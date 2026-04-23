@@ -1,0 +1,281 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding-top: 120px;
+}
+.container{
+    background-color: black;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    position: relative;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.logo{
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.nav-links ul{
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.nav-links a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.nav-links a:hover{
+    text-decoration: underline;
+    text-decoration-color: yellow;
+}
+
+
+
+.nav-right{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.search-box{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.search-box{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.search-input{
+    width: 0;
+    opacity: 0;
+    border: none;
+    outline: none;
+    transition: 0.3s;
+}
+
+.search-btn{
+    background: none;
+    border: none;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+
+.nav-right a,
+.nav-right button{
+    color: white;
+    background: none;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+* HAMBURGER */
+.hamburger{
+    display: none;
+    font-size: 28px;
+    color: white;
+    cursor: pointer;
+}
+
+#menu-toggle{
+    display: none;
+}
+
+
+
+.booking-section{
+    padding: 60px 20px;
+    background: #f7f7f7;
+    display: flex;
+    justify-content: center;
+    background-color: #e68815;
+    
+}
+
+.booking-container{
+    width: 500px;
+    height: 610px;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    margin-top: 2rem;
+}
+
+.booking-container h2{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.booking-container p{
+    text-align: center;
+    margin-bottom: 20px;
+    color: black;
+}
+
+.booking-form .form-group{
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.booking-form label{
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.booking-form input,
+.booking-form select,
+.booking-form textarea{
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+.booking-form button{
+    width: 100%;
+    padding: 12px;
+    background: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.booking-form button:hover{
+    background: #333;
+}
+
+
+
+
+.link img{
+    width: 50px;
+    height: 50px;
+}
+
+.section3{
+    width: 100%;
+    height: 400px;
+    margin-top: 5rem;
+    padding: 1rem;
+}
+
+.beauty{
+    font-size: 20px;
+}
+
+.rose{
+    color: white;
+}
+
+
+.grid3{
+    display: grid;
+    padding: 2rem;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+
+h5{
+    font-size: 25px;
+    text-align: left;
+    margin-bottom: 2rem;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+}
+
+
+ li a{
+    
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+    line-height: 1.5;
+}
+
+
+.section4{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    width: 100%;
+    height: 300px;
+    padding: 2rem;
+
+}
+
+.socials{
+    
+    gap: 10px;
+    margin-top: 0.5rem;
+    align-items: center;
+}
+
+
+
+
+@media (max-width: 768px){
+
+    .hamburger{
+        display: block;
+        font-size: 29px;
+        color: white;
+        cursor: pointer;
+    }
+
+    .nav-links{
+        display: none;
+        position: absolute;
+        top: 100px;
+        left: 0;
+        width: 100%;
+        background: black;
+        padding: 20px;
+        display: flex;
+    }
+
+    #menu-toggle:checked ~ .nav-links{
+        display: none;
+    }
+
+    .nav-links ul{
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-right{
+        display: none;
+    }
+}
